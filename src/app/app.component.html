@@ -2,6 +2,13 @@
   <mat-icon>local_fire_department</mat-icon>
   <span>Kanban Fire</span>
 </mat-toolbar>
+
+<div class="content-wrapper">
+  <button (click)="newTask()" mat-button color="primary">
+    <mat-icon>add</mat-icon>Add Task
+  </button>
+</div>
+
 <div class="container-wrapper">
   <div class="container">
     <h2>Backlog</h2>

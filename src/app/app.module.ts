@@ -8,9 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { TaskComponent } from './task/task.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TaskDialogComponent } from './task-dialog/task-dialog.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, TaskComponent],
+  declarations: [AppComponent, TaskComponent, TaskDialogComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -18,6 +24,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatIconModule,
     MatCardModule,
     DragDropModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
